@@ -1,0 +1,12 @@
+.CODE
+modmul PROC
+	MOV RAX, RCX
+	MOV RBX, RDX
+	MUL RBX
+	MOV RBX, R8
+	DIV RBX
+	MOV RAX, RDX
+	RET
+modmul ENDP
+
+END
